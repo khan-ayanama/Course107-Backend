@@ -24,6 +24,74 @@ Node.js is a runtime environment that allows you to execute JavaScript code outs
 
   * Desktop Applications: While less common, you can also use Node.js to build desktop applications using frameworks like Electron, which allows you to create cross-platform desktop apps using web technologies.
 
+## What NodeJS Includes
+
+### V8 JavaScript Engine
+
+Node.js is built on the V8 JavaScript engine, the same engine that powers the Google Chrome browser. It executes JavaScript code with high performance and compiles it to machine code using Just-In-Time (JIT) compilation.
+
+### Core Modules
+
+Node.js comes with a set of built-in modules that provide essential functionalities. Some of the core modules include:
+
+* fs (File System): For reading and writing files.
+* http and https: For creating web servers and making HTTP/HTTPS requests.
+* events: For implementing event-driven architecture.
+* util: Contains utility functions useful for various tasks.
+* path: For working with file and directory paths.
+* os: Provides information about the operating system.
+
+### NPM (Node Package Manager)
+
+Node.js includes the npm tool, which is the largest package manager for JavaScript. It allows developers to easily install, manage, and share third-party libraries (packages) for their Node.js applications.
+
+### Event Loop
+
+Node.js is designed around an event-driven, non-blocking I/O model. The event loop is a core part of Node.js, enabling asynchronous operations, which makes it well-suited for handling a large number of concurrent connections.
+
+### Global Objects
+
+Node.js provides several global objects, such as process and console, which offer access to system-level information and allow developers to log messages to the console.
+
+### Buffer
+
+Node.js includes the Buffer class for working with binary data directly. This is especially useful for tasks like reading and writing files or working with network protocols.
+
+### Child Processes
+
+Node.js allows you to create child processes, enabling you to run other programs or scripts from within your Node.js application.
+
+### Streams
+
+Node.js offers a powerful streaming API for reading and writing data. Streams are particularly useful for handling large files and network data efficiently.
+
+### HTTP and Web Servers
+
+Node.js can be used to create web servers, making it possible to build web applications and APIs using JavaScript. The http and https modules are commonly used for this purpose.
+
+### Middleware and Frameworks
+
+Node.js has a rich ecosystem of third-party libraries, frameworks, and middleware for various purposes, such as Express.js for web applications, Socket.io for real-time communication, and Mongoose for MongoDB integration.
+
+### Debugging Tools
+
+Node.js provides built-in debugging tools, and developers can use tools like the Node.js Debugger or third-party options like Visual Studio Code for debugging their applications.
+
+### Community and Ecosystem
+
+Node.js has a vibrant and active developer community, which contributes to its growth and supports the creation of various modules and libraries for a wide range of use cases.
+
+Node.js is a versatile platform for building server-side applications, and it includes a rich set of features and a thriving ecosystem that allows developers to create a wide variety of applications and services using JavaScript.
+
+## NodeJS Bindings
+
+Let's javascript calls the highley functionalities provided by  c/c++ binding
+
+## Libuv
+
+* Written in highly optimize C programming language
+* Handles input/ouput tasks
+
 ## ASynchronous
 
 The asynchronous nature of Node.js is one of its key features that sets it apart from traditional server-side programming environments. This asynchronous architecture allows Node.js to handle multiple tasks and operations without blocking the execution of other code. Here's how it works:
@@ -74,7 +142,7 @@ Multithreading refers to the ability of an application or process to execute mul
 
 In summary, processes and threads are essential concepts in operating systems and concurrency. Processes provide isolation and independent execution units, while threads provide lightweight units of execution that share resources within a process. Multithreading allows applications to make efficient use of available resources and improve overall performance by handling multiple tasks concurrently.
 
-## Event Loop
+## Event Loop node
 
 The event loop is a crucial concept in asynchronous programming and is the backbone of how JavaScript handles asynchronous operations. It's responsible for managing the execution of code in a non-blocking manner, allowing for efficient handling of I/O operations, timers, and events.
 
