@@ -89,7 +89,7 @@ Let's javascript calls the highley functionalities provided by  c/c++ binding
 
 ## Libuv
 
-* Written in highly optimize C programming language
+* Written in highly optimize C programming language and many other langauges like Ruby etc.
 * Handles input/ouput tasks
 
 ## ASynchronous
