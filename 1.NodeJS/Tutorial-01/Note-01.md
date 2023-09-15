@@ -2,7 +2,7 @@
 
 ## NodeJS Release Cycle
 
-The release cycle of Node.js consists of several different types of releases, including Long-Term Support (LTS) and Current releases. As of my last knowledge update in September 2021, here's an overview of the Node.js release cycle:
+The release cycle of Node.js consists of several different types of releases, including Long-Term Support (LTS) and Current releases. here's an overview of the Node.js release cycle:
 
 ### Long-Term Support (LTS) Releases
 
