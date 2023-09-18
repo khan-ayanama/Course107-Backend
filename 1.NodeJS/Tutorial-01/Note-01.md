@@ -142,3 +142,27 @@ REPL stands for Read Evaluate Print Loop, and it is a programming language envir
 ## Node vs Javascript
 
 NodeJS is a cross-platform and opensource Javascript runtime environment that allows the javascript to be run on the server-side. Nodejs allows Javascript code to run outside the browser. Nodejs comes with a lot of modules and mostly used in web development. Javascript is a Scripting language.
+
+## NodeJS Modules
+
+These core modules provide essential functionality for working with JavaScript on the server-side. Some of the core modules that are installed automatically with Node.js include:
+
+`fs (File System)`: This module allows you to work with the file system, including reading and writing files, creating directories, and more.
+
+`http`: The HTTP module is essential for building web servers and making HTTP requests. It provides the tools needed to handle HTTP requests and responses.
+
+`url`: This module helps in parsing and formatting URLs, making it easier to work with URLs in your applications.
+
+`path`: The path module provides utilities for working with file and directory paths. It's helpful for manipulating file paths in a cross-platform way.
+
+`os (Operating System)`: This module provides information about the host operating system, such as CPU architecture and memory usage.
+
+`util`: The util module contains various utility functions that can be helpful for different tasks in your applications.
+
+`events`: Node.js is event-driven, and the events module provides an event emitter that allows you to create and handle custom events.
+
+`stream`: The stream module is used for working with streams of data, which is crucial for handling I/O operations efficiently.
+
+`querystring`: This module is useful for parsing and formatting query strings, often used in web applications.
+
+`crypto`: The crypto module provides cryptographic functionality, including encryption, decryption, hashing, and more.
