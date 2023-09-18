@@ -6,23 +6,23 @@ Node.js is a runtime environment that allows you to execute JavaScript code outs
 
 * Here are some key things Node.js can do:
 
-  * Server-Side Programming: Node.js is commonly used to build server-side applications such as web servers, APIs, and real-time applications. It's designed to handle asynchronous I/O operations efficiently, making it suitable for handling a large number of concurrent connections.
+  * `Server-Side Programming`: Node.js is commonly used to build server-side applications such as web servers, APIs, and real-time applications. It's designed to handle asynchronous I/O operations efficiently, making it suitable for handling a large number of concurrent connections.
 
-  * Web Development: With the help of frameworks like Express.js, you can build web applications and APIs using Node.js. Express.js provides a robust set of features for routing, middleware, and handling HTTP requests and responses.
+  * `Web Development`: With the help of frameworks like Express.js, you can build web applications and APIs using Node.js. Express.js provides a robust set of features for routing, middleware, and handling HTTP requests and responses.
 
-  * Real-Time Applications: Node.js is well-suited for building real-time applications like chat applications, online gaming, and collaborative tools. Its event-driven architecture and non-blocking I/O make it easy to handle multiple clients simultaneously.
+  * `Real-Time Applications`: Node.js is well-suited for building real-time applications like chat applications, online gaming, and collaborative tools. Its event-driven architecture and non-blocking I/O make it easy to handle multiple clients simultaneously.
 
-  * Package Management: Node.js comes with the npm (Node Package Manager) tool, which is a powerful package manager that allows you to easily install, manage, and share reusable code packages.
+  * `Package Management`: Node.js comes with the npm (Node Package Manager) tool, which is a powerful package manager that allows you to easily install, manage, and share reusable code packages.
 
-  * Command-Line Tools: Node.js can be used to build command-line tools and scripts. You can create utilities for tasks like file manipulation, data processing, automation, and more.
+  * `Command-Line Tools`: Node.js can be used to build command-line tools and scripts. You can create utilities for tasks like file manipulation, data processing, automation, and more.
 
-  * Microservices: Node.js is often used in microservices architecture due to its lightweight and scalable nature. It's easy to develop and deploy small, independent services that communicate with each other.
+  * `Microservices`: Node.js is often used in microservices architecture due to its lightweight and scalable nature. It's easy to develop and deploy small, independent services that communicate with each other.
 
-  * IoT (Internet of Things): Node.js can be used to develop applications for IoT devices because of its efficiency and ability to handle a variety of hardware components.
+  * `IoT (Internet of Things)`: Node.js can be used to develop applications for IoT devices because of its efficiency and ability to handle a variety of hardware components.
 
-  * Streaming: Node.js is great for handling streaming data, such as audio and video, due to its event-driven nature and ability to process data in chunks.
+  * `Streaming`: Node.js is great for handling streaming data, such as audio and video, due to its event-driven nature and ability to process data in chunks.
 
-  * Desktop Applications: While less common, you can also use Node.js to build desktop applications using frameworks like Electron, which allows you to create cross-platform desktop apps using web technologies.
+  * `Desktop Applications`: While less common, you can also use Node.js to build desktop applications using frameworks like Electron, which allows you to create cross-platform desktop apps using web technologies.
 
 ## What NodeJS Includes
 
@@ -34,12 +34,12 @@ Node.js is built on the V8 JavaScript engine, the same engine that powers the Go
 
 Node.js comes with a set of built-in modules that provide essential functionalities. Some of the core modules include:
 
-* fs (File System): For reading and writing files.
-* http and https: For creating web servers and making HTTP/HTTPS requests.
-* events: For implementing event-driven architecture.
-* util: Contains utility functions useful for various tasks.
-* path: For working with file and directory paths.
-* os: Provides information about the operating system.
+* `fs (File System)`: For reading and writing files.
+* `http and https`: For creating web servers and making HTTP/HTTPS requests.
+* `events`: For implementing event-driven architecture.
+* `util`: Contains utility functions useful for various tasks.
+* `path`: For working with file and directory paths.
+* `os`: Provides information about the operating system.
 
 ### NPM (Node Package Manager)
 
@@ -96,13 +96,13 @@ Let's javascript calls the highley functionalities provided by  c/c++ binding
 
 The asynchronous nature of Node.js is one of its key features that sets it apart from traditional server-side programming environments. This asynchronous architecture allows Node.js to handle multiple tasks and operations without blocking the execution of other code. Here's how it works:
 
-* Non-Blocking I/O: In traditional server environments, when a server handles a task that involves I/O operations (like reading/writing to files or databases), it usually blocks the entire application until that task is completed. This can lead to inefficient resource utilization. Node.js, on the other hand, employs non-blocking I/O operations. When an I/O operation is initiated, Node.js doesn't wait for it to complete. Instead, it continues executing other tasks and registers a callback function to be executed once the I/O operation is finished. This enables Node.js to efficiently handle multiple tasks simultaneously.
+* `Non-Blocking I/O`: In traditional server environments, when a server handles a task that involves I/O operations (like reading/writing to files or databases), it usually blocks the entire application until that task is completed. This can lead to inefficient resource utilization. Node.js, on the other hand, employs non-blocking I/O operations. When an I/O operation is initiated, Node.js doesn't wait for it to complete. Instead, it continues executing other tasks and registers a callback function to be executed once the I/O operation is finished. This enables Node.js to efficiently handle multiple tasks simultaneously.
 
-* Event Loop: Node.js operates within an event-driven architecture. It has an event loop that continuously checks for events like incoming HTTP requests or completion of I/O operations. When an event is detected, Node.js triggers the associated callback function, allowing the program to respond to events in an asynchronous manner.
+* `Event Loop`: Node.js operates within an event-driven architecture. It has an event loop that continuously checks for events like incoming HTTP requests or completion of I/O operations. When an event is detected, Node.js triggers the associated callback function, allowing the program to respond to events in an asynchronous manner.
 
-* Callback Functions: Callbacks are a fundamental part of writing asynchronous code in Node.js. They are functions passed as arguments to other functions. These callback functions are executed when an asynchronous operation is completed. For example, when reading a file asynchronously, you provide a callback function that is executed once the file is read.
+* `Callback Functions`: Callbacks are a fundamental part of writing asynchronous code in Node.js. They are functions passed as arguments to other functions. These callback functions are executed when an asynchronous operation is completed. For example, when reading a file asynchronously, you provide a callback function that is executed once the file is read.
 
-* Promises and Async/Await: While callbacks are powerful, they can sometimes lead to complex and nested code structures (a situation known as "callback hell"). To address this, Node.js introduced Promises and later the async/await syntax. Promises provide a more structured way to handle asynchronous operations, and async/await allows you to write asynchronous code in a more synchronous style, making it easier to read and maintain.
+* `Promises and Async/Await`: While callbacks are powerful, they can sometimes lead to complex and nested code structures (a situation known as "callback hell"). To address this, Node.js introduced Promises and later the async/await syntax. Promises provide a more structured way to handle asynchronous operations, and async/await allows you to write asynchronous code in a more synchronous style, making it easier to read and maintain.
 
 The asynchronous nature of Node.js is particularly advantageous when dealing with tasks that involve I/O operations, network requests, and real-time interactions, as it enables efficient handling of multiple requests and events concurrently without blocking the main execution thread. This makes Node.js a suitable choice for building scalable and responsive applications, especially in scenarios where high concurrency is required.
 
@@ -132,17 +132,17 @@ Multithreading refers to the ability of an application or process to execute mul
 
 ### Differences
 
-* Memory Sharing: In a process, each instance has its own separate memory space, while threads within the same process share the same memory space.
+* `Memory Sharing`: In a process, each instance has its own separate memory space, while threads within the same process share the same memory space.
 
-* Isolation: Processes are isolated from each other, preventing one process from affecting the execution or data of another. Threads within the same process, however, can directly access and modify each other's memory.
+* `Isolation`: Processes are isolated from each other, preventing one process from affecting the execution or data of another. Threads within the same process, however, can directly access and modify each other's memory.
 
-* Creation Overhead: Creating a new process is generally more resource-intensive than creating a new thread due to the overhead of duplicating resources for the new process. Threads share most of their resources with the parent process.
+* `Creation Overhead`: Creating a new process is generally more resource-intensive than creating a new thread due to the overhead of duplicating resources for the new process. Threads share most of their resources with the parent process.
 
-* Communication: Inter-process communication (IPC) between different processes can be more complex and slower compared to inter-thread communication within the same process.
+* `Communication`: Inter-process communication (IPC) between different processes can be more complex and slower compared to inter-thread communication within the same process.
 
-* Resource Management: Processes are heavier in terms of resource usage because they have their own memory space and resources. Threads are lighter in terms of resource usage since they share resources with the process.
+* `Resource Management`: Processes are heavier in terms of resource usage because they have their own memory space and resources. Threads are lighter in terms of resource usage since they share resources with the process.
 
-* Concurrency: Processes are inherently separate and isolated, so they can run on different CPU cores or even on different machines. Threads, being part of the same process, run on the same core or cores available to the process.
+* `Concurrency`: Processes are inherently separate and isolated, so they can run on different CPU cores or even on different machines. Threads, being part of the same process, run on the same core or cores available to the process.
 
 In summary, processes and threads are essential concepts in operating systems and concurrency. Processes provide isolation and independent execution units, while threads provide lightweight units of execution that share resources within a process. Multithreading allows applications to make efficient use of available resources and improve overall performance by handling multiple tasks concurrently.
 
@@ -152,17 +152,17 @@ The event loop is a crucial concept in asynchronous programming and is the backb
 
 Here's an overview of how the event loop works:
 
-* Call Stack: When you execute JavaScript code, it's processed in the call stack, which is a data structure that keeps track of the currently executing function or code block. Each function call is added to the stack, and when a function completes, it's removed from the stack.
+* `Call Stack`: When you execute JavaScript code, it's processed in the call stack, which is a data structure that keeps track of the currently executing function or code block. Each function call is added to the stack, and when a function completes, it's removed from the stack.
 
-* Web APIs: When you encounter asynchronous operations like setTimeout, fetch, or XMLHttpRequest, these operations are offloaded to Web APIs provided by the browser or the environment. These APIs include functions for handling timers, making network requests, and interacting with the DOM.
+* `Web APIs`: When you encounter asynchronous operations like setTimeout, fetch, or XMLHttpRequest, these operations are offloaded to Web APIs provided by the browser or the environment. These APIs include functions for handling timers, making network requests, and interacting with the DOM.
 
-* Callback Queue: Asynchronous operations complete in the background, and their corresponding callback functions are placed in the callback queue. Each callback function waits for its turn to be executed.
+* `Callback Queue`: Asynchronous operations complete in the background, and their corresponding callback functions are placed in the callback queue. Each callback function waits for its turn to be executed.
 
-* Event Loop: The event loop continuously checks the callback queue while the call stack is empty. If the call stack is empty, the event loop takes the first callback from the queue and pushes it onto the call stack, executing the corresponding code.
+* `Event Loop`: The event loop continuously checks the callback queue while the call stack is empty. If the call stack is empty, the event loop takes the first callback from the queue and pushes it onto the call stack, executing the corresponding code.
 
-* Execution: Once the callback function is on the call stack, it's executed. This process continues as long as there are callbacks in the queue and the call stack is empty.
+* `Execution`: Once the callback function is on the call stack, it's executed. This process continues as long as there are callbacks in the queue and the call stack is empty.
 
-* Microtasks: JavaScript also has a concept of microtasks, which are executed at the end of each task in the event loop. Promises and other asynchronous operations that are part of the ECMAScript specification are handled as microtasks. Microtasks have a higher priority than regular tasks, ensuring that they are executed before the next tick of the event loop.
+* `Microtasks`: JavaScript also has a concept of microtasks, which are executed at the end of each task in the event loop. Promises and other asynchronous operations that are part of the ECMAScript specification are handled as microtasks. Microtasks have a higher priority than regular tasks, ensuring that they are executed before the next tick of the event loop.
 
 * By following this cycle of checking the callback queue, moving callbacks to the call stack, and executing them, the event loop allows JavaScript to handle asynchronous tasks efficiently without blocking the main thread. This is essential for building responsive and interactive web applications.
 
@@ -176,7 +176,6 @@ The event loop in JavaScript consists of different phases that help manage the e
 
 * The event loop starts by processing any synchronous tasks that are currently in the call stack.  
   * These are the regular function calls that are executed sequentially one after another.
-Microtask Queue:
 
 * After processing synchronous tasks, the event loop checks the microtask queue.
   * Microtasks are tasks that have a higher priority than regular tasks and are executed before the next tick of the event loop.
